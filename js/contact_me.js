@@ -1,5 +1,8 @@
 $(function() {
 
+    var $phoneNumber = 0;
+
+
     $("input,textarea").jqBootstrapValidation({
         preventSubmit: true,
         submitError: function($form, event, errors) {
@@ -10,9 +13,14 @@ $(function() {
             // get values from FORM
             var name = $("input#name").val();
             var email = $("input#email").val();
-            var phone = $("input#phone").val();//last name or number
+            var phone = $("input#phone").val();//last name or Age
             var message = $("textarea#message").val();
             var country = $("input#country").val();
+            
+            var $phoneNumber = phone;
+            //console.log($phoneNumber.length);
+            // subscribe - first name - age - country - email
+         
 
             console.log(name + email + phone + message + country);
             var firstName = name; // For Success/Failure Message
@@ -36,10 +44,20 @@ $(function() {
                     $('#success').html("<div class='alert alert-success'>");
                     $('#success > .alert-success').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
                         .append("</button>");
-                    $('#success > .alert-success')
-                        .append("<strong>Your message has been sent. </strong>");
+                 
+                    
                     $('#success > .alert-success')
                         .append('</div>');
+
+                    if($phoneNumber.length <= 3){
+
+                        $('#success > .alert-success').append("<strong>Thanks, we will send you an email when the next digital edition is released. </strong>");
+                
+                        }else{
+                        
+                        $('#success > .alert-success')
+                        .append("<strong>Your message has been sent. </strong>");
+                       }
 
                     //clear all fields
                     $('#contactForm').trigger("reset");

@@ -1076,8 +1076,13 @@ display: flex;
 .small_{
     width:100%;
 }
+.modal_{
+    background-size: cover;
+    background-attachment: inherit;
+}
 
 }
+
 
 
 
