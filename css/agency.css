@@ -998,7 +998,7 @@ section.noBackGround{
 
 /* Modals */
 .modal_{
-     margin-bottom: 35px;
+    margin-bottom: 35px;
     height:60vh;
      text-align: center;
     color: #fff;
@@ -1009,6 +1009,11 @@ section.noBackGround{
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+
+    -webkit-box-shadow: inset 0px 0px 24px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: inset 0px 0px 24px 0px rgba(0,0,0,0.75);
+    box-shadow: inset 0px 0px 24px 0px rgba(0,0,0,0.75);
+
 }
 .firstModal{
     
@@ -1038,6 +1043,35 @@ section.noBackGround{
     background-image: url('../Des_/untitled-178Z.jpg');
     background-position: top center;
 }
+.CrabModal{
+    background-image: url('../Des_/CrabKingdom/roadcrabs-DiMasters-large.jpg');
+    background-position: top center;
+}
+
+.WUModal{
+    background-image: url('../Des_/WU/IMG_1200.jpg');
+    background-position: top top;
+}
+.LostTimeModal{
+    background-image: url('../Des_/LostTime/shutterstock_272468327.jpg');
+    background-position: top center;
+}
+
+._LostTime{
+    background-image: url('../Des_/LostTime/shutterstock_272556215.jpg');
+  background-position: bottom center;
+    height:40vh;
+}
+
+.smallCrabModal{
+    background-image: url('../Des_/CrabKingdom/PrisonIsland.jpg');
+    height:20vh;
+}
+
+.mexicoModal{
+    background-image: url('../Des_/Mexico/shutterstock_79965631_.jpg');
+    background-position: bottom center;
+}
 
 p{
     margin-top:20px;
@@ -1060,28 +1094,38 @@ display: flex;
     width:360px;
 }
 
+.padding_50{
+    padding-top: 50px;
+}
+
 
 
 @media(max-width:992px) {
- .portfolio-item{
-    width:48%;
-    overflow: hidden;
-}
-}
+
+         .portfolio-item{
+            width:48%;
+            overflow: hidden;
+        }
+    }
+
 @media(max-width: 768px){
-    .portfolio-item{
-    width:100%;
-    overflow: hidden;
-}
-.small_{
-    width:100%;
-}
-.modal_{
-    background-size: cover;
-    background-attachment: inherit;
+        .portfolio-item{
+            width:100%;
+            overflow: hidden;
+        }
+        .small_{
+            width:100%;
+        }
+        .modal_{
+            background-size: cover;
+            background-attachment: inherit;
+        }
+        .fa{
+           position: relative;
+           left:25px;
+        }
 }
 
-}
 
 
 
