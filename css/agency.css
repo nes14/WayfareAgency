@@ -1068,9 +1068,37 @@ section.noBackGround{
     height:20vh;
 }
 
+.coolModal{
+    background-image: url('../Des_/CapitalCool/wellington-city-at-dawn-panorama.jpg');
+    height: 50vh;
+    background-position: 50% 45%;
+}
+
 .mexicoModal{
     background-image: url('../Des_/Mexico/shutterstock_79965631_.jpg');
     background-position: bottom center;
+}
+.IslandHavenModal{
+    background-image: url('../Des_/IslandHaven/P2260209.jpg');
+    background-position: 50% 5%;
+
+}
+
+.aplineWinterModal{
+    background-image: url('../Des_/AplineWinter/5433503263_6dd0e21661_o.jpg');
+    background-position: 50% 5%;
+}
+.LostLandscapeModal{
+    background-image: url('../Des_/LostLandscape/NaomiBAdlands.jpg');
+    background-position: 50% 75%;
+}
+
+.coolModalBig{
+    background-image: url('../Des_/CapitalCool/beer-is-love-2.jpg');
+}
+
+.dayBay{
+    background-image: url('../Des_/DayBay/shutterstock_160968266 copy.jpg');
 }
 
 p{
